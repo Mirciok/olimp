@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1769968905 source:c:\users\nadea\desktop\c++_codes\2011_aranjare\aranjare\main.cpp
+	<iostream>
+	<fstream>
+	<list>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1770217276 source:c:\users\nadea\desktop\c++_codes\cuvintele\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<cctype>
+	<string>
+
