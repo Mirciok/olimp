@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+void verif();
 int main(){
     vector<string> cuv;
     int n;
@@ -12,17 +13,25 @@ int main(){
         cin>>a;
         cuv.push_back(a);
     }
-    for(int i=0; i<n; i++){
-        for(int j=i+1; j<n; j++){
+    for(auto cuvant:cuv){
 
-            for(int k=0; k<cuv.at(i).size(); k++){
-                for(int l=0; l<cuv.at(j).size(); l++){
-                  if(cuv.at(i).at(k)==cuv.at(j).at(l)){
-                      cuv.erase(cuv.begin())
-                  }
-                }
+    }
+
+}
+//f p/u verificarea daca coincide cu un cuvant
+void verif(string &a, string &b, int &s){
+    int lung=0;
+    int incep=0;
+    for(int i=0;i<a.length();i++){
+        for(int j=incep;j<b.length();j++){
+            if(a.at(i)==b.at(j)){
+                lung++;
+                incep=j+1;
+                break;
             }
         }
     }
-    return 0;
+    if(lung==a.length()){
+        s++;
+    }
 }
