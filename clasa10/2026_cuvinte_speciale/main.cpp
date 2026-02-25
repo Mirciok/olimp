@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
-void verif();
+void verif(string &a, string &b, int &s);
 int main(){
     vector<string> cuv;
     int n;
@@ -13,8 +13,12 @@ int main(){
         cin>>a;
         cuv.push_back(a);
     }
-    for(auto cuvant:cuv){
-
+    for(int i=0; i<cuv.size(); i++){
+        for(int j=i+1; j<cuv.size(); j++){
+            if(j>=cuv.size()){
+                break;
+            }
+        }
     }
 
 }
@@ -35,3 +39,7 @@ void verif(string &a, string &b, int &s){
         s++;
     }
 }
+
+
+
+
