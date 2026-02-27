@@ -13,13 +13,13 @@ int main(){
         cin>>a;
         cuv.push_back(a);
     }
+    int total=0;
     for(int i=0; i<cuv.size(); i++){
         for(int j=i+1; j<cuv.size(); j++){
-            if(j>=cuv.size()){
-                break;
-            }
+            verif(cuv.at(i), cuv.at(j), total);
         }
     }
+    cout<<n-total;
 
 }
 //f p/u verificarea daca coincide cu un cuvant
@@ -39,7 +39,3 @@ void verif(string &a, string &b, int &s){
         s++;
     }
 }
-
-
-
-
