@@ -18,7 +18,7 @@ int main(){
                 timp=timp+sala[i][j]*td;
             }
         }
-    timp=timp*2+n*m*(ts+tm);
+    timp=timp*2+n*m*(ts+tm)-td*sala[0][0]+1;
     cout<<timp;
 }
 void distanta(int n, int m, int noptim, int moptim, vector<vector<int>> &sala){
